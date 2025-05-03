@@ -35,7 +35,7 @@ mvn test
 mvn test -Dcucumber.filter.tags="@login"
 
 
-# PRoject Structure
+# Project Structure
 asana-cucumber-automation/
 │
 ├── src/
@@ -53,4 +53,4 @@ asana-cucumber-automation/
 
  #Test Report
 1. Allure Report
-2.2. Extent Report (Optional)
+2. Extent Report (Optional)
