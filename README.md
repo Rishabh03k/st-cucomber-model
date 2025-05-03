@@ -23,26 +23,17 @@ Whether you're part of a QA team or a solo tester, this framework helps track bu
 
 ## 🧱 Project Structure
 
-asana-cucumber-automation/
-│
-├── src/
-│   └── test/
-│       └── java/
-│           ├── features/                # Gherkin feature files (.feature)
-│           │   └── login.feature
-│           │
-│           ├── stepdefinitions/         # Step definitions for feature steps
-│           │   └── LoginSteps.java
-│           │
-│           ├── runners/                 # Cucumber test runner classes
-│           │   └── TestRunner.java
-│           │
-│           ├── pages/                   # Page Object Model classes
-│           │   └── LoginPage.java
-│           │
-│           └── utils/                   # Asana integration, config helpers, etc.
-│               ├── AsanaIntegration.java
-│               └── DriverManager.java
+#asana-cucumber-automation/
+src/
+├── main/java/com/asana/test/
+│   ├── pages/         # Page Object classes
+│   └── utils/         # Utility classes
+└── test/
+    ├── java/com/asana/test/
+    │   ├── runners/   # Test runners
+    │   └── steps/     # Step definitions
+    └── resources/
+        └── features/  # Feature files
 │
 ├── reports/                             # Generated test reports (Allure/Extent)
 │
